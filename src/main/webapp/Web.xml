@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPEhibernate-configurationPUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<!-- Database connection settings -->
+<propertyname="connection.driver_class">com.mysql.jdbc.Driver</property>
+<propertyname="connection.url">jdbc:mysql://localhost:3306/ecommerce</property>
+<propertyname="connection.username">root</property>
+<propertyname="connection.password">jaya</property>
+<propertyname="connection.pool_size">1</property>
+<propertyname="current_session_context_class">thread</property>
+<propertyname="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+<propertyname="show_sql">true</property>
+<propertyname="hbm2ddl.auto">create</property>
+<mappingclass="com.to.Player"/>
+</session-factory>
+</hibernate-configuration>
